@@ -1,0 +1,22 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 25,
+      "address": "Nowhere"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "age": 24,
+      "address": "Nowhere"
+    },
+    {
+      "id": 3,
+      "name": "John Smith",
+      "age": 25,
+      "address": "Nowhere"
+    }
+  ]
+}
