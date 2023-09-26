@@ -1,0 +1,75 @@
+body {
+  background-image: url('/assets/image/fondo2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: SansSerif, sans-serif;
+  background-color: rgba(0, 0, 0, 0.68);
+  padding: 5cm;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse; /* Colocar la imagen a la derecha */
+  align-items: center;
+}
+
+.text {
+  flex: 4; /* Ocupar el espacio restante */
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  margin-top: -4cm;
+  text-align: center;
+}
+h2{
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  margin-top: 1cm;
+  text-align: center;
+}
+p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align: justify; /* Alinea el texto a la justificación */
+  text-align-last: center; /* Centra la última línea del texto */
+}
+
+
+button {
+  background-color: #83838d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.conImage {
+  text-align: left;
+  margin-right: 1cm;
+  margin-left: 3cm;
+margin-top: -6cm;
+}
+
+

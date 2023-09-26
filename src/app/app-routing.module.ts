@@ -7,6 +7,8 @@ import {ContactComponent} from "./public/pages/contact/contact.component";
 import {ServicesComponent} from "./public/pages/services/services.component";
 import {SupportComponent} from "./public/pages/support/support.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
+import {LoginComponent} from "./public/pages/login/login.component";
+import {SingUpComponent} from "./public/pages/sing-up/sing-up.component";
 
 const routes: Routes = [
   { path:'home', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path:'contact', component: ContactComponent},
   { path:'services', component: ServicesComponent},
   { path:'support', component: SupportComponent},
+  { path:'login', component: LoginComponent},
+  { path:'sing-up', component: SingUpComponent},
   { path:'', redirectTo: 'home', pathMatch: 'full'},
   { path :'customers', component: CustomersComponent },
   { path :'**', component: PageNotFoundComponent },

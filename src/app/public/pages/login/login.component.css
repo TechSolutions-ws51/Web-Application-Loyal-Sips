@@ -1,0 +1,73 @@
+/* styles.css */
+
+body {
+  background-image: url('/assets/image/fondo2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: SansSerif, sans-serif;
+  background-color: rgba(0, 0, 0, 0.68);
+  padding: 5cm;
+}
+
+.container {
+  background-color: #7d7c7c;
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  max-width: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+form {
+  text-align: left;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #ff5e00;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #ff9100;
+}
+
+#showPassword {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ff9300;
+}
+
+#showPassword:hover {
+  text-decoration: underline;
+}

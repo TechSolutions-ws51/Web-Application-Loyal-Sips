@@ -13,5 +13,7 @@ export class AppComponent {
     {path: '/contact', title: 'Contact'},
     {path: '/services', title: 'Services'},
     {path: '/support', title: 'Support'},
+    {path: '/login', title: 'Login'},
+    {path: '/sing-up', title: 'Sing Up'},
   ]
 }

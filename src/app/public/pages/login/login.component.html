@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <style>
+    /* Agrega un estilo para la animación del botón */
+    button {
+      transition: background-color 0.3s ease;
+    }
+
+    /* Cambia el color de fondo del botón al pasar el mouse sobre él */
+    button:hover {
+      background-color: #3498db; /* Cambia el color a tu preferencia */
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Iniciar Sesión</h2>
+  <form action="guardar_usuario.php" method="POST" id="loginForm">
+    <div class="input-container">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="input-container">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="checkbox" id="showPassword"> Mostrar Contraseña
+    </div>
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+</div>
+
+<script>
+  const passwordField = document.getElementById("password");
+  const showPasswordCheckbox = document.getElementById("showPassword");
+  const loginForm = document.getElementById("loginForm");
+
+  showPasswordCheckbox.addEventListener("change", function () {
+    if (showPasswordCheckbox.checked) {
+      passwordField.type = "text";
+    } else {
+      passwordField.type = "password";
+    }
+  });
+</script>
+</body>
+</html>
