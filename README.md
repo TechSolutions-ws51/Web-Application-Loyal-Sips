@@ -1,6 +1,13 @@
 # TP1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+## Project Description
+
+El objetivo principal de este proyecto es desarrollar una aplicación que permita a los usuarios clientes de los bares,
+la facilidad de ganar puntos por cada consumo realizado, los cuales podrán ser canjeados por productos o servicios que
+el bar ofrezca. Del mismo modo, se tiene como objetivo ayudar al bar a controlar el inventario por medio de un sistema
+de inventario que permita llevar un control de los productos que se tienen en stock, así como también, llevar un control
+de los productos en stock, para evitar que se agoten y no se puedan ofrecer a los clientes.
+
 
 ## Development server
 
