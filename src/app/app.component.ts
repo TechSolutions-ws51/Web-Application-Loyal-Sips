@@ -10,10 +10,11 @@ export class AppComponent {
   options = [
     {path: '/home', title: 'Home'},
     {path: '/about', title: 'About'},
-    {path: '/contact', title: 'Contact'},
     {path: '/services', title: 'Services'},
+    {path: '/drinks', title: 'Drinks'},
     {path: '/support', title: 'Support'},
+    {path: '/contact', title: 'Contact'},
     {path: '/login', title: 'Login'},
-    {path: '/sing-up', title: 'Sing Up'},
+    {path: '/sign-up', title: 'Sing Up'},
   ]
 }

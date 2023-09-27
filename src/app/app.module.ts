@@ -25,7 +25,8 @@ import { SupportComponent } from './public/pages/support/support.component';
 import { ContactComponent } from './public/pages/contact/contact.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import { LoginComponent } from './public/pages/login/login.component';
-import { SingUpComponent } from './public/pages/sing-up/sing-up.component';
+import { SignUpComponent } from './public/pages/sign-up/sign-up.component';
+import { DrinksComponent } from './public/pages/drinks/drinks.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { SingUpComponent } from './public/pages/sing-up/sing-up.component';
     ContactComponent,
     PageNotFoundComponent,
     LoginComponent,
-    SingUpComponent,
+    SignUpComponent,
+    DrinksComponent,
   ],
   imports: [
     FormsModule,

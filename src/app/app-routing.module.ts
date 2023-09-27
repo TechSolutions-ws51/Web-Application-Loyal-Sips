@@ -8,8 +8,8 @@ import {ServicesComponent} from "./public/pages/services/services.component";
 import {SupportComponent} from "./public/pages/support/support.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {LoginComponent} from "./public/pages/login/login.component";
-import {SingUpComponent} from "./public/pages/sing-up/sing-up.component";
-
+import {SignUpComponent} from "./public/pages/sign-up/sign-up.component";
+import {DrinksComponent} from "./public/pages/drinks/drinks.component";
 const routes: Routes = [
   { path:'home', component: HomeComponent},
   { path:'about', component: AboutComponent},
@@ -17,7 +17,8 @@ const routes: Routes = [
   { path:'services', component: ServicesComponent},
   { path:'support', component: SupportComponent},
   { path:'login', component: LoginComponent},
-  { path:'sing-up', component: SingUpComponent},
+  { path:'sign-up', component: SignUpComponent},
+  { path:'drinks', component: DrinksComponent},
   { path:'', redirectTo: 'home', pathMatch: 'full'},
   { path :'customers', component: CustomersComponent },
   { path :'**', component: PageNotFoundComponent },
