@@ -9,6 +9,8 @@ export class SupportComponent {
   questionText: string = ''; // Variable para almacenar el texto de la pregunta
   username: string = ''; // Variable para almacenar el nombre de usuario
   password: string = ''; // Variable para almacenar la contraseña
+  preguntaEnviada: boolean = false;
+
 
 
   onQuestionChange(event: any) {
@@ -19,6 +21,7 @@ export class SupportComponent {
     } else {
       document.querySelector('label[for="question"]')?.classList.remove('hidden');
     }
+
   }
 
   sendQuestion() {
@@ -26,5 +29,6 @@ export class SupportComponent {
     // Puedes implementar aquí la lógica para enviar la pregunta
     // Puedes acceder a las propiedades this.questionText, this.username, this.password
     // para obtener los valores ingresados por el usuario
+    this.preguntaEnviada = true;
   }
 }
