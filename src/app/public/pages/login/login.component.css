@@ -71,3 +71,8 @@ button:hover {
 #showPassword:hover {
   text-decoration: underline;
 }
+.conImage {
+  text-align: center; /* Alinea el texto a la derecha */
+
+  margin-top: -19cm;
+}

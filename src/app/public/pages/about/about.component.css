@@ -69,7 +69,42 @@ button:hover {
   text-align: left;
   margin-right: 1cm;
   margin-left: 3cm;
-margin-top: -6cm;
+  margin-top: -6cm;
 }
 
 
+/* En tu archivo CSS o en un bloque de estilo en tu documento HTML */
+.rectangle {
+  width: 700px; /* Ancho del rectángulo */
+  height: 200px; /* Altura del rectángulo */
+  background-color: rgba(0, 0, 0, 0.29); /* Color de fondo del rectángulo */
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Borde del rectángulo */
+  padding: 30px; /* Espacio de relleno dentro del rectángulo */
+  text-align: center; /* Centra el contenido del rectángulo horizontalmente */
+  margin-right: 1cm;
+  margin-left: 10cm;
+  margin-top: 1cm;
+  border-radius: 15px; /* Ajusta el valor según el radio de curvatura que desees */
+}
+
+
+
+.Simage {
+  max-width: 100%; /* Tamaño máximo de la imagen */
+  height: auto; /* Ajusta la altura de la imagen automáticamente */
+  text-align: center; /* Centra el contenido del rectángulo horizontalmente */
+  margin-right: 1cm;
+  margin-left: 10cm;
+  margin-top: -6.6cm;
+}
+
+.text {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align: justify; /* Alinea el texto a la justificación */
+  text-align-last: center; /* Centra la última línea del texto */
+  margin-right: -1.3cm;
+  margin-left: -10cm;
+  margin-top: -5.6cm;
+}

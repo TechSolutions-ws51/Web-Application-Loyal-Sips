@@ -1,0 +1,72 @@
+/* Estilo general para el cuerpo de la página */
+body {
+  background-image: url('/assets/image/fondo2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: SansSerif, sans-serif;
+  background-color: rgba(0, 0, 0, 0.68);
+  padding: 4cm;
+}
+
+/* Estilo del contenedor del formulario */
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+form {
+  background-color: #7d7c7c;
+  border-radius: 9px;
+  margin: 100px auto;
+  max-width: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+
+/* Estilo de los elementos del formulario */
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="radio"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #ff4700;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff8000;
+}
+
+.conImage {
+  text-align: center; /* Alinea el texto a la derecha */
+
+  margin-top: -27cm;
+}
