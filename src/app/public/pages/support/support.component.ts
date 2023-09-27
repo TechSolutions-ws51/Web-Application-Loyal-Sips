@@ -10,6 +10,7 @@ export class SupportComponent {
   username: string = ''; // Variable para almacenar el nombre de usuario
   password: string = ''; // Variable para almacenar la contraseña
   preguntaEnviada: boolean = false;
+  questionDetail: string = '';
 
 
 

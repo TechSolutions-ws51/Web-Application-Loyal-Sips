@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from "@angular/common/http";
-import {CustomerService} from "./tp1/services/customer.service";
-import { CustomersComponent } from './tp1/pages/customers/customers.component';
+import {DrinksService} from "./tp1/services/drinks.service";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
@@ -26,13 +25,13 @@ import { ContactComponent } from './public/pages/contact/contact.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import { LoginComponent } from './public/pages/login/login.component';
 import { SignUpComponent } from './public/pages/sign-up/sign-up.component';
-import { DrinksComponent } from './public/pages/drinks/drinks.component';
+import { DrinkFormComponent } from './tp1/components/drink-form/drink-form.component';
+import {DrinksComponent} from "./tp1/pages/customers/drinks.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomersComponent,
     HomeComponent,
     AboutComponent,
     ServicesComponent,
@@ -42,6 +41,7 @@ import { DrinksComponent } from './public/pages/drinks/drinks.component';
     LoginComponent,
     SignUpComponent,
     DrinksComponent,
+    DrinkFormComponent,
   ],
   imports: [
     FormsModule,
@@ -62,7 +62,7 @@ import { DrinksComponent } from './public/pages/drinks/drinks.component';
     MatGridListModule,
     MatDividerModule,
   ],
-  providers: [CustomerService],
+  providers: [DrinksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
