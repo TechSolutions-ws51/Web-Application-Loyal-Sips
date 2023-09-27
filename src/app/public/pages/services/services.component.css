@@ -15,7 +15,9 @@
 }
 
 .titulo-servicios {
-  font-size: 2em;
+  font-size:4em;
+  text-align: center;
+  margin-top: 1.4em;
   margin-bottom: 1em;
   color: #c5bfbc;
   font-family: 'Inter', sans-serif;
@@ -44,14 +46,14 @@
 
 .cliente-container{
   background-color: rgb(13, 166, 225);
-  max-width: 500px;
+  max-width: 37em;
   overflow: hidden;
   box-shadow: 0 0 80px rgb(48, 111, 136);
   height: 37em; /* Establece la altura fija para ambos cuadros */
 }
 .bar-container {
   background-color: rgb(173, 91, 222);
-  max-width: 500px;
+  max-width: 37em;
   overflow: hidden;
   box-shadow: 0 0 80px rgb(109, 55, 141);
   height: 37em; /* Establece la altura fija para ambos cuadros */
@@ -63,7 +65,7 @@ h3 {
 }
 
 p {
-  font-size: 1.9em;
+  font-size: 1.85em;
   line-height: 1.3em;
   color: #000000;
 }
