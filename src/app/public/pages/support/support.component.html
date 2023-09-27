@@ -6,14 +6,12 @@
     type="text"
     id="question"
     [(ngModel)]="questionText"
-    (input)="onQuestionChange($event)"
   >
-  <button class="preguntar-button">Preguntar</button>
+  <button class="preguntar-button" (click)="sendQuestion()">Preguntar</button>
 </div>
 
-
 <!--cuadro de posibles respuestas-->
-<div class="answers-box">
+<div class="answers-box" *ngIf="preguntaEnviada"> <!-- Se muestra solo si preguntaEnviada es true -->
   <h3 class="subtitle">Posibles respuestas:</h3>
   <div class="answers-container">
     <div class="answer">
@@ -31,15 +29,12 @@
   </div>
 </div>
 
-
-
-
-
 <div class="ticket-box">
   <h3 class="subtitle">Generar ticket</h3>
 
   <form (ngSubmit)="sendQuestion()">
-    <label for="username">Nombre de usuario:</label>
+
+  <label for="username">Nombre de usuario:</label>
     <input type="text" id="username" [(ngModel)]="username" required>
 
     <label for="password">Contraseña:</label>
