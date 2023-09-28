@@ -1,4 +1,3 @@
 export const environment = {
-  serverBasePath:'http://localhost:3000/api/v1',
-
+  serverBasePath: 'https://my-json-server.typicode.com/TechSolutions-ws51/fake-api/drinks',
 };
