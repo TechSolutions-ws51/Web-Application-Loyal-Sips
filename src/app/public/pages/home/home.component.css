@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   color: #ffffff;
   justify-content: flex-start;
@@ -54,9 +54,10 @@ button:hover {
 
 .conImage {
   text-align: right; /* Alinea el texto a la derecha */
-  margin-right: 4cm; /* Agrega un margen a la derecha del texto para separarlo de la imagen */
+  margin-right: 1cm; /* Agrega un margen a la derecha del texto para separarlo de la imagen */
   margin-left: 2cm;
   margin-top: -11cm;
+
 }
 
 
