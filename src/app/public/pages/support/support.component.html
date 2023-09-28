@@ -1,1 +1,46 @@
-<p>support works!</p>
+<h2 class="title-support"><b>Support</b></h2>
+
+<div class="question-box">
+  <label for="question">Escribe tu pregunta</label>
+  <input
+    type="text"
+    id="question"
+    [(ngModel)]="questionText"
+  >
+  <button class="preguntar-button" (click)="sendQuestion()">Preguntar</button>
+</div>
+
+<!--cuadro de posibles respuestas-->
+<div class="answers-box" *ngIf="preguntaEnviada"> <!-- Se muestra solo si preguntaEnviada es true -->
+  <h3 class="subtitle">Posibles respuestas:</h3>
+  <div class="answers-container">
+    <div class="answer">
+      <p>Respuesta 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="answer">
+      <p>Respuesta 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="answer">
+      <p>Respuesta 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="answer">
+      <p>Respuesta 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+    </div>
+  </div>
+</div>
+
+<div class="ticket-box">
+  <h3 class="subtitle">Genera tu ticket de pregunta</h3>
+
+  <label for="username">Nombre de usuario:</label>
+  <input type="text" id="username" [(ngModel)]="username" required>
+
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" [(ngModel)]="password" required>
+
+  <label for="questionDetail">Detalle de la pregunta:</label>
+  <textarea id="questionDetail" [(ngModel)]="questionDetail" required></textarea>
+
+  <button type="submit">Generar Ticket</button>
+</div>
+

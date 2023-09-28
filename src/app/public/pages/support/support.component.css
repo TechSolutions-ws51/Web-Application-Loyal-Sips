@@ -1,0 +1,140 @@
+.title-support {
+  font-size:4em;
+  text-align: center;
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+  color: #c5bfbc;
+  font-family: 'Inter', sans-serif;
+}
+
+.question-box {
+  background-color: rgba(211, 207, 207, 0.14);
+  color: white;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 60em;
+  max-height: 10em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0em 0em 1.2em rgba(51, 51, 51, 0.5); /* Agrega sombra con valores personalizables */
+}
+
+
+.preguntar-button {
+  background-color: rgba(0, 255, 194, 0.68);
+  margin-top: 1em; /* Espacio superior para separar el botón del textarea */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.question-box button:hover {
+  background-color: rgba(0, 124, 93, 0.9);
+}
+
+.question-box label {
+  font-size: 20px;
+  margin-bottom: 1.5em;
+}
+
+.question-box textarea {
+  width:5em;
+  max-height: 4em;
+  border: 1px solid rgba(204, 204, 204, 0.76);
+  border-radius: 5px;
+}
+
+/* Ajusta el estilo de los cuadros de respuesta */
+/* Ajusta el estilo del contenedor de respuestas */
+.answers-box {
+  background-color: rgba(211, 207, 207, 0.14);
+  color: rgba(255, 255, 255, 1);
+  padding: 2em;
+  margin: 2em auto 0; /* Esto agrega espacio en la parte superior */
+  border-radius: 10px;
+  max-width: 60em;
+  box-shadow: 0em 0em 1.2em rgba(51, 51, 51, 0.5); /* Agrega sombra con valores personalizables */
+}
+
+
+
+
+
+.answers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.answer {
+  background-color: #f5f5f5;
+  color: #5b5555;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+.answer p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.ticket-box {
+  background-color: rgba(211, 207, 207, 0.14);
+  color: rgba(255, 255, 255, 1);
+  padding: 2em;
+  margin: 2em auto; /* Esto agrega espacio en la parte superior y en la parte inferior */
+  border-radius: 10px;
+  max-width: 60em;
+  box-shadow: 0em 0em 1.2em rgba(51, 51, 51, 0.5); /* Agrega sombra con valores personalizables */
+}
+
+.ticket-box label {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 1);
+  display: block; /* Muestra cada etiqueta en una línea separada */
+  margin-bottom: 0.5em; /* Espacio inferior entre etiquetas */
+}
+
+.ticket-box input,
+.ticket-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.ticket-box button {
+  background-color: rgba(0, 255, 194, 0.68);
+  margin-top: 1em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ticket-box button:hover {
+  background-color: rgba(0, 124, 93, 0.9);
+}
+
+
+

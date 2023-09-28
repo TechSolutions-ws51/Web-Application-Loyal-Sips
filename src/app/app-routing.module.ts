@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {CustomersComponent} from "./tp1/pages/customers/customers.component";
 import {HomeComponent} from "./public/pages/home/home.component";
 import {AboutComponent} from "./public/pages/about/about.component";
 import {ContactComponent} from "./public/pages/contact/contact.component";
@@ -9,7 +8,7 @@ import {SupportComponent} from "./public/pages/support/support.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {LoginComponent} from "./public/pages/login/login.component";
 import {SignUpComponent} from "./public/pages/sign-up/sign-up.component";
-import {DrinksComponent} from "./public/pages/drinks/drinks.component";
+import {DrinksComponent} from "./tp1/pages/customers/drinks.component";
 const routes: Routes = [
   { path:'home', component: HomeComponent},
   { path:'about', component: AboutComponent},
@@ -20,7 +19,6 @@ const routes: Routes = [
   { path:'sign-up', component: SignUpComponent},
   { path:'drinks', component: DrinksComponent},
   { path:'', redirectTo: 'home', pathMatch: 'full'},
-  { path :'customers', component: CustomersComponent },
   { path :'**', component: PageNotFoundComponent },
 ];
 
