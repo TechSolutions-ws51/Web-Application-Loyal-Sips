@@ -1,1 +1,53 @@
-<p>contact works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <!-- Enlace a tu hoja de estilos CSS si tienes una -->
+  <link rel="stylesheet" href="contact.component.css">
+</head>
+<body>
+<div>
+
+  <div class="container-contact" >
+    <h1 class="titulo-contact">Contacto</h1>
+    <p class="p-titulo">"Estamos aquí para atender tus necesidades con un servicio de primera en la industria de la vida nocturna. ¡Contáctanos y hagamos crecer juntos tu negocio!"</p>
+  </div>
+</div>
+
+<section class="section-container-contact">
+  <div class="left">
+    <section id="formulario">
+      <h2 class="titulo-formulario">Formulario de Contacto</h2>
+      <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+  </div>
+  <div class="right">
+
+    <div class="contenido-derecha">
+      <h2>Información </h2>
+      <img src="https://www.esan.edu.pe/images/blog/2016/11/10/grupodetrabajo-principal.jpg" width="200px" alt="Imagen de ejemplo">
+      <p>123 Calle Magdalena Lima, Surco. </p>
+      <p>+51 989836726</p>
+      <p>Lima, Perú</p>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
