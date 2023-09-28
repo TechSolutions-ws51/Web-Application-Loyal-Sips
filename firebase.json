@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "TP1",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
