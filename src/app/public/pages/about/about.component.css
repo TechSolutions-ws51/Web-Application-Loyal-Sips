@@ -81,8 +81,8 @@ button:hover {
   border: 2px solid rgba(0, 0, 0, 0.3); /* Borde del rectángulo */
   padding: 30px; /* Espacio de relleno dentro del rectángulo */
   text-align: center; /* Centra el contenido del rectángulo horizontalmente */
-  margin-right: 4cm;
-  margin-left: 13cm;
+  margin-right: 6cm;
+  margin-left: 10cm;
   margin-top: 1cm;
   border-radius: 15px; /* Ajusta el valor según el radio de curvatura que desees */
 }

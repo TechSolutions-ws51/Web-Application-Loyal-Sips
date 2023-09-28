@@ -1,22 +1,33 @@
 {
-  "customers": [
+  "drinks": [
     {
+      "name": "Bar La Esquina",
+      "address": "Pisco Sour + Cerveza por S/. 20",
       "id": 1,
-      "name": "John Doe",
-      "age": 25,
-      "address": "Nowhere"
+      "image": "assets/image/pisco.jpg"
+
     },
     {
+      "name": "Bar La Esquina",
+      "address": "Chilcano + Cerveza artesanal por S/. 25",
       "id": 2,
-      "name": "Jane Doe",
-      "age": 24,
-      "address": "Nowhere"
+      "image": "assets/image/chilcano.jpg"
+
     },
     {
+      "name": "Bar El Rincon",
+      "address": "Mojito + Sangria por S/. 22",
       "id": 3,
-      "name": "John Smith",
-      "age": 25,
-      "address": "Nowhere"
+      "image": "assets/image/mojito.png"
+
+    },
+    {
+      "name": "Bar La Taberna",
+      "address": "Martini + whisky sour por S/. 24",
+      "id": 4,
+      "image": "assets/image/wishysour.jpg"
+
     }
+
   ]
 }

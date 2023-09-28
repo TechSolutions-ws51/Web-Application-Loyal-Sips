@@ -1,12 +1,13 @@
-export class Customer {
+export class Drink {
   id: number;
   name: string;
-  age: number;
   address: string;
+  image: string;
   constructor() {
     this.id = 0;
     this.name = '';
-    this.age = 0;
     this.address = '';
+    this.image = '';
+
   }
 }
