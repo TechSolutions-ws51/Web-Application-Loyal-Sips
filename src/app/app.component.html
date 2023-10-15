@@ -1,7 +1,11 @@
 <mat-toolbar class="mat-toolbar-color">
-  <img src="assets/image/logo-loyal-sips-toolbar.png" alt="">
-  <div class="mat-spacer"></div>
-  <a mat-button *ngFor="let option of options"
-  [routerLink]="option.path">{{ option.title }} </a>
+  <img src="assets/image/logo-loyal-sips-toolbar.png" alt="Logo">
+  <button mat-icon-button (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="mat-toolbar-navigation" [class.show-navigation]="showNavigationButtons">
+    <a mat-button *ngFor="let option of options" [routerLink]="option.path">{{ option.title }}</a>
+  </div>
 </mat-toolbar>
+
 <router-outlet></router-outlet>

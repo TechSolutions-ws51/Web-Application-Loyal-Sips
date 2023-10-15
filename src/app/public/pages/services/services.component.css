@@ -97,3 +97,9 @@ h2 {
   backdrop-filter: blur(11px);/*this is filter*/
   z-index: -1;
 }
+
+@media (max-width: 320px) {
+  p {
+    font-size: 1.3rem; /* Tamaño de texto más pequeño en pantallas más pequeñas */
+  }
+}

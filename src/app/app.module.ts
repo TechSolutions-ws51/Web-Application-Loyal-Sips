@@ -27,6 +27,7 @@ import { LoginComponent } from './public/pages/login/login.component';
 import { SignUpComponent } from './public/pages/sign-up/sign-up.component';
 import { DrinkFormComponent } from './tp1/components/drink-form/drink-form.component';
 import {DrinksComponent} from "./tp1/pages/customers/drinks.component";
+import { ProfileComponent } from './public/pages/profile/profile.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {DrinksComponent} from "./tp1/pages/customers/drinks.component";
     SignUpComponent,
     DrinksComponent,
     DrinkFormComponent,
+    ProfileComponent,
   ],
   imports: [
     FormsModule,

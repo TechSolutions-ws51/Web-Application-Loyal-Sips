@@ -9,6 +9,7 @@ import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-foun
 import {LoginComponent} from "./public/pages/login/login.component";
 import {SignUpComponent} from "./public/pages/sign-up/sign-up.component";
 import {DrinksComponent} from "./tp1/pages/customers/drinks.component";
+import {ProfileComponent} from "./public/pages/profile/profile.component";
 const routes: Routes = [
   { path:'home', component: HomeComponent},
   { path:'about', component: AboutComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path:'login', component: LoginComponent},
   { path:'sign-up', component: SignUpComponent},
   { path:'drinks', component: DrinksComponent},
+  {path: 'profile', component: ProfileComponent},
   { path:'', redirectTo: 'home', pathMatch: 'full'},
   { path :'**', component: PageNotFoundComponent },
 ];
