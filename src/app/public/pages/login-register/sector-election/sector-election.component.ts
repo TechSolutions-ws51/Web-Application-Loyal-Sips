@@ -12,11 +12,11 @@ export class SectorElectionComponent {
   }
 
   redirectToClientLogin() {
-    this.router.navigate(["./login-register/login-register-cliente"]);  // Redirige a la ruta deseada
+    this.router.navigate(["/login-register/cliente"]);  // Redirige a la ruta deseada
   }
 
   redirectToEmpresaLogin() {
-    this.router.navigate(['./login-register/login-register-empresa']);  // Redirige a la ruta deseada
+    this.router.navigate(["/login-register/empresa"]);  // Redirige a la ruta deseada
   }
 
 }
