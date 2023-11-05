@@ -16,4 +16,7 @@ export class BaresComponent implements OnInit {
       this.bars=data.bars;
     });
   }
+
+
+
 }

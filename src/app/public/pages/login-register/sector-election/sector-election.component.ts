@@ -8,15 +8,4 @@ import { Router } from '@angular/router';
 })
 export class SectorElectionComponent {
 
-  constructor(private router: Router) {
-  }
-
-  redirectToClientLogin() {
-    this.router.navigate(["/login-register/cliente"]);  // Redirige a la ruta deseada
-  }
-
-  redirectToEmpresaLogin() {
-    this.router.navigate(["/login-register/empresa"]);  // Redirige a la ruta deseada
-  }
-
 }

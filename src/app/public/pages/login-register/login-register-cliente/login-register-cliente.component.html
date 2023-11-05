@@ -1,1 +1,33 @@
-<p>login-register-cliente works!</p>
+<div class="login-container">
+  <div class="wrapper" [ngClass]=" {'inactive' : 'isInactive' }">
+    <div class="form-box login">
+      <h2>Login</h2>
+      <div class="details-login">
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+
+
+          <!--password-->
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a>Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register-cliente" >
+            <p>Dont have an account? <a class="register-link" [@click]="toggleInactive">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
