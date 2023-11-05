@@ -29,5 +29,32 @@
 
     }
 
+  ],
+
+  "pubs": [
+    {
+      "id": "1",
+      "name": "Bar Lanchita",
+      "description": "Ubicado en Avenida San Martin",
+      "image": "https://media.discordapp.net/attachments/1145898392631918606/1163231536699682817/bar-lanchita.png?ex=653ed2ca&is=652c5dca&hm=ed9fc8bedb74238e766854cde8d429e1c6124fd2f2eaf08af75bcf3c8c199e1d&="
+    },
+    {
+      "id": "2",
+      "name": "Rimberio’s Bar & Cafe",
+      "description": "Ubicado en Jiron Aldebaran.",
+      "image": "https://media.discordapp.net/attachments/1145898392631918606/1163231535969873970/bar2.png?ex=653ed2c9&is=652c5dc9&hm=9adf6001e8add34b5cee3a4b8b25d37f2a55f2cfd660de9706f02e9433345926&="
+    },
+    {
+      "id": "3",
+      "name": "Berna Cocteles",
+      "description": "Ubicado en Jiron San Juan Bautista.",
+      "image": "https://media.discordapp.net/attachments/1145898392631918606/1163231536225734716/Bar3.png?ex=653ed2ca&is=652c5dca&hm=885ba670cd6cd1aa99b70b730363f79468f33de216b0d2f3318bfedbc756dd19&="
+    },
+    {
+      "id": "4",
+      "name": "Cocktail Bar",
+      "description": "Ubicado en Avenida Abelardo Quiñones",
+      "image": "https://media.discordapp.net/attachments/1145898392631918606/1163231536464805948/Bar4.png?ex=653ed2ca&is=652c5dca&hm=7122b1fb3947b239ea3fa79fbca3728e8ba28d0f9ca74f576d91e46d0147f426&="
+    }
   ]
 }
