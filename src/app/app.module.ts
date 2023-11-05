@@ -31,7 +31,6 @@ import { ProfileComponent } from './public/pages/profile/profile.component';
 import { BaresComponent } from './public/pages/bares/bares.component';
 import { Bar1Component } from './public/pages/bar1/bar1.component';
 import { PubsComponent } from './tp1/pages/pubs/pubs.component';
-import { LoginRegisterComponent } from './public/pages/login-register/login-register.component';
 import { LoginRegisterClienteComponent } from './public/pages/login-register/login-register-cliente/login-register-cliente.component';
 import { LoginRegisterEmpresaComponent } from './public/pages/login-register/login-register-empresa/login-register-empresa.component';
 import { SectorElectionComponent } from './public/pages/login-register/sector-election/sector-election.component';
@@ -54,7 +53,6 @@ import { SectorElectionComponent } from './public/pages/login-register/sector-el
     BaresComponent,
     Bar1Component,
     PubsComponent,
-    LoginRegisterComponent,
     LoginRegisterClienteComponent,
     LoginRegisterEmpresaComponent,
     SectorElectionComponent,
