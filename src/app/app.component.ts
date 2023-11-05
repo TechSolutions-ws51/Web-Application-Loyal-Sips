@@ -7,6 +7,7 @@ import { MatSidenav } from "@angular/material/sidenav";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  /*Aqui  se muestra lo que se ve en el Navbar*/
   title = 'TP1';
   options = [
     { path: '/home', title: 'Home' },
@@ -19,6 +20,7 @@ export class AppComponent {
     //{ path: '/sign-up', title: 'Sing Up' },
     { path: '/profile', title: 'Profile' },
     { path: '/support', title: 'Support' },
+    { path: '/login-register', title: 'Login' },
   ];
 
   /* Determina si la pantalla tiene valor pequeño */
