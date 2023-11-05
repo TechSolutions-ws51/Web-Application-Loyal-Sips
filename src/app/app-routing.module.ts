@@ -13,6 +13,12 @@ import {ProfileComponent} from "./public/pages/profile/profile.component";
 import {BaresComponent} from "./public/pages/bares/bares.component";
 import {Bar1Component} from "./public/pages/bar1/bar1.component";
 import {SectorElectionComponent} from "./public/pages/login-register/sector-election/sector-election.component";
+import {
+  LoginRegisterClienteComponent
+} from "./public/pages/login-register/login-register-cliente/login-register-cliente.component";
+import {
+  LoginRegisterEmpresaComponent
+} from "./public/pages/login-register/login-register-empresa/login-register-empresa.component";
 const routes: Routes = [
   { path:'home', component: HomeComponent},
   // { path:'about', component: AboutComponent},
@@ -23,9 +29,11 @@ const routes: Routes = [
   //{ path:'sign-up', component: SignUpComponent},
   { path:'drinks', component: DrinksComponent},
   { path: 'profile', component: ProfileComponent},
-  { path: 'login-register', component: SectorElectionComponent},
   { path: 'bares', component: BaresComponent},
   {path: 'bar-profile/:id', component: Bar1Component},
+  { path: 'login-register', component: SectorElectionComponent},
+  { path: 'login-register/cliente', component: LoginRegisterClienteComponent},
+  { path: 'login-register/empresa', component: LoginRegisterEmpresaComponent},
   { path:'', redirectTo: 'home', pathMatch: 'full'},
   { path :'**', component: PageNotFoundComponent },
 ];
