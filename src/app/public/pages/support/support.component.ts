@@ -27,8 +27,6 @@ export class SupportComponent {
 
   sendQuestion() {
     // Este método se llamará cuando el formulario se envíe
-    // Puedes implementar aquí la lógica para enviar la pregunta
-    // Puedes acceder a las propiedades this.questionText, this.username, this.password
     // para obtener los valores ingresados por el usuario
     this.preguntaEnviada = true;
   }

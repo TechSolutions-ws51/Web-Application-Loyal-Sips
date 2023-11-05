@@ -1,0 +1,67 @@
+.title-bares{
+  font-size: 4em;
+  text-align: center;
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+  color: #c5bfbc;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+.container-bares {
+  background-color: rgb(30, 24, 33);
+  color: white;
+  padding: 4em;
+  border-radius: 4rem;
+  max-width: 45em;
+  max-height: 45em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5em rgba(65, 37, 76, 0.82);
+}
+
+.card-bares-1, .card-bares-2, .card-bares-3, .card-bares-4 {
+  background-color: #1e1e27;
+  border-radius: 3rem;
+  margin: 1em;
+  flex-direction: row; /* Los elementos estarán en línea */
+
+}
+
+.card-content {
+  display: flex; /* coloca la descripcion y el titulo al costado de la imagen*/
+  flex-direction: row;
+}
+
+.card-content img {
+  width: auto;
+  height: 50%;
+  margin-top: 1.6rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.text-content {
+
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  text-align: justify;
+
+}
+
+.card-title-1, .card-title-2, .card-title-3, .card-title-4 {
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-text-1, .card-text-2, .card-text-3, .card-text-4 {
+  color: #c5bfbc;
+  font-size: 1rem;
+}
+
+.btn {
+  color: #ffffff;
+}

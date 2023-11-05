@@ -31,9 +31,17 @@ export class DrinksComponent implements OnInit{
     this.drinkData = {} as Drink;
   }
   private getAllDrinks() {
-    this.drinksService.getAll().subscribe((response: any) => {
-      this.dataSource.data = response;
-    });
+    this.drinksService.getAll().subscribe({
+      next: (drinks: any) => {
+        this.dataSource.data = drinks;
+      },
+      error: (err: any) => {
+        console.log(err);
+      },
+      complete: () => {
+        console.log('All drinks are retrieved');
+      }
+    })
   }
 
   private addDrink() {

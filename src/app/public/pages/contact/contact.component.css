@@ -15,15 +15,6 @@
   font-weight: bold;
 }
 
-.p-titulo {
-  font-size: 1.2em;
-  line-height: 1.4em;
-  color: #c5bfbc;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
-
-}
 
 /* Estilos para el formulario de contacto */
 #formulario {
@@ -137,4 +128,17 @@ margin: 80px;
   font-size: 1.2em;
   color: #fff;
   justify-content: center ;
+}
+
+
+/*Estilo del titulo para la pagina y ajunstar el diseño de este*/
+.p-titulo {
+
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #bfb9b5;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+
 }

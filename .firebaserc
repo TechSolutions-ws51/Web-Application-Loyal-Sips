@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "loyalsips": {
+      "hosting": {
+        "TP1": [
+          "loyalsips"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "loyalsips"
+  }
+}

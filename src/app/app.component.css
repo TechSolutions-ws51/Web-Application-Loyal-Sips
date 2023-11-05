@@ -1,11 +1,78 @@
-/*ESTILO DE TOOLBAR*/
-
-.mat-spacer{
-  flex: 1 1 auto;
-}
+/* ESTILO DE TOOLBAR */
 .mat-toolbar-color {
-  background-color: rgba(0, 0, 0.44);
+  background-color: rgb(30, 29, 29);
   color: white;
+  min-height: 5.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
+/* Estilos para el botón de menú en pantallas pequeñas */
+.mat-toolbar button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
 
+/* Estilos para el botón de menú en estado activo (abierto) */
+.mat-toolbar button.active {
+  color: #ff9800;
+  transform: rotate(90deg);
+}
+
+/* Estilos para las opciones de navegación en la barra */
+.mat-toolbar-navigation {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.mat-toolbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.17rem;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+.mat-toolbar a:hover {
+  color: #ff9800;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 900px) {
+  .mat-toolbar button {
+    display: block;
+  }
+}
+
+/* Estilos para el menú de navegación en pantallas pequeñas */
+@media (max-width: 900px) {
+  .mat-toolbar .mat-toolbar-navigation {
+    display: none;
+    position: absolute;
+    top: 5.4rem;
+    left: 0;
+    flex-direction: column;
+    background-color: rgb(30, 29, 29);
+    width: 100%;
+    z-index: 1;
+
+  }
+
+  .mat-toolbar .mat-toolbar-navigation.show-navigation {
+    display: flex;
+    transition: all .5s ease;
+  }
+
+  .mat-toolbar .mat-toolbar-navigation a {
+    margin: 0.7rem 0;
+    transition: all .5s ease;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="container-login">
+  <div class="image-sectores">
+    <img src="https://media.discordapp.net/attachments/1145898392631918606/1170532117898350732/cliente.png">
+    <img src="https://media.discordapp.net/attachments/1145898392631918606/1170532117697015828/empresario.png">
+  </div>
+
+  <div class="welcome-login">
+    <h1 class="title-login">Bienvenido</h1>
+
+    <div class="sector-Cliente">
+      <p class="subtitle-login subtitle-ciente">¿Eres cliente?</p>
+      <!-- [routerlink] pones la ruta que se puso en el app.routing.module.ts es decir en el path -->
+      <button [routerLink]="'/login-register/cliente'" class="button-login button-cliente">Click Aquí</button>
+    </div>
+
+    <div class="sector-Empresa">
+      <p class="subtitle-login subtitle-emrpesa">¿Sector empresarial?</p>
+      <!-- [routerlink] pones la ruta que se puso en el app.routing.module.ts es decir en el path -->
+      <button [routerLink]="'/login-register/empresa'" class="button-login button-empresa">Click Aquí</button>
+    </div>
+  </div>
+</div>

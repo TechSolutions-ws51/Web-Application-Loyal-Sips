@@ -1,176 +1,94 @@
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: SansSerif, sans-serif;
-  background-color: rgba(23, 23, 23);
-  padding: 5cm;
+/* Estilos para el cuadro gris de la descripción */
+.description-box {
+  background-color: #f0f0f0; /* Color de fondo gris */
+  padding: 1rem;
+  text-align: justify; /* Justificar el texto */
 }
 
-.center-content {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column; /* Columna en todas las pantallas */
-  align-items: center; /* Centra horizontalmente los elementos */
+/* Estilos para el texto dentro del cuadro gris */
+.description-text {
+  font-size: 1rem;
+  color: #fff; /* Color de texto blanco */
+  line-height: 1.5; /* Espaciado entre líneas */
 }
 
-h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: #ffffff;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 50px;
-  margin-top: -4cm;
-  text-align: center;
-  margin-bottom: 20px; /* Espacio inferior para el encabezado "About" */
-}
 
+/* Estilos para el contenedor principal */
 .content-box {
   display: flex;
-  flex-direction: row; /* Coloca los elementos en fila en pantallas grandes */
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Cambiar a centrar horizontalmente */
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 5rem;
 }
 
+/* Estilos para el logotipo */
+.logo img {
+  max-width: 14rem;
+  height: auto;
+  padding: 0 2rem;
+}
+
+
+/* Estilos para la sección izquierda */
 .left-content {
-  text-align: left; /* Alinea el texto a la izquierda */
-  margin-left: 20px; /* Espacio entre el texto y la imagen en pantallas grandes */
-  margin-top: 20px; /* Espacio superior en pantallas grandes */
+  flex: 1;
+  padding: 1rem;
 }
 
-.left-content p{
-  font-size: 20px;
-}
-
-.about-heading{
-  text-align: center;
-  line-height: 1.2em;
-}
-.logo {
-  margin-right: 20px; /* Espacio entre la imagen y el texto en pantallas grandes */
-  margin-bottom: 20px; /* Espacio inferior en pantallas grandes */
-}
-
-/* Estilos para hacerlo responsive */
-@media screen and (max-width: 768px) {
-  .content-box {
-    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-    text-align: center; /* Centra horizontalmente el texto e imagen */
-  }
-
-  .logo {
-    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-    margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
-    margin-bottom: 20px; /* Espacio inferior en pantallas pequeñas */
-  }
-
-  .left-content {
-    margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
-  }
-}
-
-
-
-.content {
-  display: flex;
-  flex-direction: row-reverse; /* Colocar la imagen a la derecha */
-  align-items: center;
-}
-
-h2{
-  font-size: 80px;
-  font-weight: bold;
+/* Estilos para el encabezado */
+.about-heading {
+  font-size: 3.8rem;
   color: #ffffff;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  margin-top: 1cm;
-  text-align: center;
+  margin-bottom: 1rem; /* Margen inferior */
 }
 
-p {
-  font-size: 15px;
+.description-text-1{
+  font-size: 1.5rem;
   color: #ffffff;
-  margin-bottom: 60px;
-  text-align: justify; /* Alinea el texto a la justificación */
-  text-align-last: center; /* Centra la última línea del texto */
-  line-height: 1.2em;
+  margin-bottom: 1rem; /* Margen inferior */
+  margin-top: 3rem;
+  line-height: 2rem;
+  text-align: justify;
 }
 
 
-button {
-  background-color: #83838d;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* En tu archivo CSS o en un bloque de estilo en tu documento HTML */
+/* Estilos para el cuadro gris */
 .rectangle {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto; /* Añade margen superior e inferior para separar del párrafo */
-  background-color: rgba(211, 207, 207, 0.14);
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
-  padding: 20px;
-  box-sizing: border-box;
+  max-width: 800px; /* Ancho máximo del cuadro gris */
+  margin: 0 auto; /* Centrar el cuadro gris en la página */
+  background-color: #5a5959; /* Color de fondo del cuadro gris */
+  padding: 3rem; /* Espaciado interior del cuadro gris */
 }
 
-
-
-.content-box {
-  display: flex;
-  flex-direction: row; /* Dos columnas: texto a la izquierda, imagen a la derecha */
-  align-items: center;
-}
-
-.text {
-  flex: 4; /* Toma el espacio restante en la columna de texto */
-  text-align: left; /* Texto a la derecha */
-}
-
-/* Estilo CSS para aumentar el tamaño de letra del párrafo */
-.text p{
-  font-size: 20px; /* Ajusta el tamaño de letra*/
-  line-height: 1.5; /* Ajusta este valor para aumentar o disminuir el espacio entre líneas */
+/* Estilos para la imagen dentro del cuadro gris */
+.box-with-image {
+  display: flex; /* Utilizamos flexbox para colocar la imagen y el texto en línea */
+  align-items: center; /* Centrar verticalmente los elementos dentro del cuadro gris */
 }
 
 .image {
-  flex: 1; /* Toma el espacio restante en la columna de la imagen */
-  text-align: right;
-  margin-left: 20px; /* Espacio entre el texto y la imagen */
+  flex: 1; /* La imagen ocupa una parte del espacio disponible */
+  padding-right: 2rem; /* Espaciado a la derecha de la imagen */
 }
 
-/* Estilos para hacerlo responsive */
-@media screen and (max-width: 768px) {
-  .content-box {
-    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-    text-align: center; /* Centra horizontalmente el texto e imagen */
-  }
-
-
-  .text, .image {
-    flex: initial; /* Reinicia el valor de flex en pantallas pequeñas */
-    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-    text-align: justify; /* Justifica el texto a la izquierda en pantallas pequeñas */
-  }
+.description-text {
+  margin: 0; /* Eliminar el margen predeterminado del párrafo */
+  text-align: justify;
+  font-size: 1.4rem;
 }
 
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 320px) {
+  /* Tamaño de fuente más pequeño para el título "About" en pantallas pequeñas */
+  .titulo-about {
+    font-size: 3em;
+  }
 
-
-
+  /* Tamaño de fuente más pequeño para el párrafo de descripción en pantallas pequeñas */
+  .description-box p {
+    font-size: 0.9rem;
+  }
+}
