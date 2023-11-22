@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from "@angular/material/sidenav";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { MatSidenav } from "@angular/material/sidenav";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   /*Aqui  se muestra lo que se ve en el Navbar*/
   title = 'TP1';
   options = [
@@ -32,5 +34,11 @@ export class AppComponent {
   toggleSidenav() {
     this.showNavigationButtons = !this.showNavigationButtons;
   }
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['es', 'en']);
+    translate.setDefaultLang('en');
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang && browserLang.match(/en|es/) ? browserLang : 'es');
 
+  }
 }
