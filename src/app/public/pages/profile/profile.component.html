@@ -4,43 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Agrega estilos según tus necesidades */
-    #puntosButton {
-      position: fixed;
-      top: 100px;
-      right: 100px;
-      background: rgba(1, 171, 225, 0.73);
-      border: none;
-      outline: none;
-      border-radius: 1.3rem;
-      cursor: pointer;
-      font-size: 1.1rem;
-      color: white;
-      font-weight: 500;
-      padding: 10px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("https://media.discordapp.net/attachments/1145898392631918604/1160097541598220308/fondo-perfil.png?ex=65336c07&is=6520f707&hm=2d16ff24972fd76b7926cec7528ddf006641f9aa987aa0b57563b207e9520e92&=&width=1409&height=302");
+      background-size: cover;
     }
 
-    #puntosButton:hover {
-      background: rgba(255, 255, 255, 0.89);
-      color: #01abe1;
-      transition: 0.5s;
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .title-profile {
+      font-size: 4em;
+      margin-top: 1.3em;
+      margin-bottom: 1em;
+    }
+
+    .profile-image {
+      width: 100%;
+      max-width: 10rem;
+      height: auto;
+      border-radius: 50%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      cursor: grab;
+      clip-path: circle(50%);
+    }
+
+    .account-details {
+      background-color: #1e1d1d;
+      padding: 2rem;
+      max-width: 60em;
+      font-family: Inter, sans-serif;
+      font-size: 1.5em;
+      line-height: 2.5rem;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .title-profile {
+        font-size: 2.5em;
+      }
+
+      .profile-image {
+        max-width: 8em;
+      }
+
+      .account-details {
+        padding: 1rem;
+        font-size: 1.2em;
+        line-height: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title-profile {
+        font-size: 2em;
+      }
+
+      .profile-image {
+        max-width: 6em;
+      }
+
+      .account-details {
+        padding: 0.5rem;
+        font-size: 1em;
+        line-height: 1.5rem;
+      }
     }
   </style>
   <title>Profile Page</title>
 </head>
 <body>
 
-<!-- Tu código HTML existente -->
-<div class="profile-section">
-  <!-- Fondo de imagen -->
-  <img class="imagen-full" src="https://media.discordapp.net/attachments/1145898392631918604/1160097541598220308/fondo-perfil.png?ex=65336c07&is=6520f707&hm=2d16ff24972fd76b7926cec7528ddf006641f9aa987aa0b57563b207e9520e92&=&width=1409&height=302" alt="Fondo de perfil">
-
-  <!-- Contenedor de perfil con título y foto de usuario -->
-  <div class="profile-container">
-    <h2 class="title-profile">Jean Pierre</h2>
-    <div class="profile-image-container">
-      <img class="profile-image" #userPhoto src="https://media.discordapp.net/attachments/1145898392631918606/1163166280489115698/jocais.jpg?ex=653e9603&is=652c2103&hm=f7d07b1964793b81b012d068ee26a7060efb012941d4e95fe2f167b13c50f364&=" alt="Foto de usuario">
-    </div>
+<div class="profile-container">
+  <h2 class="title-profile">Jean Pierre</h2>
+  <div class="profile-image-container">
+    <img class="profile-image" src="https://media.discordapp.net/attachments/1145898392631918606/1163166280489115698/jocais.jpg?ex=653e9603&is=652c2103&hm=f7d07b1964793b81b012d068ee26a7060efb012941d4e95fe2f167b13c50f364&=" alt="Foto de usuario">
   </div>
 </div>
 
@@ -50,23 +107,6 @@
   <p>Cell phone number: 950 688 942</p>
   <p>Email: jean126pi@gmail.com</p>
 </div>
-
-<!-- Botón para puntos -->
-<button id="puntosButton" class="btn">Loyalty: 0</button>
-
-<script>
-  // JavaScript para contar puntos
-  let puntos = 0;
-
-  // Función para actualizar el contador y el texto del botón
-  function actualizarPuntos() {
-    puntos += 1; // Puedes ajustar la velocidad cambiando la cantidad que se suma
-    document.getElementById('puntosButton').innerText = `Puntos: ${puntos}`;
-  }
-
-  // Configurar el intervalo para que se ejecute cada segundo
-  setInterval(actualizarPuntos, 1000);
-</script>
 
 </body>
 </html>

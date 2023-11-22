@@ -5,25 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingredientes de Cócteles</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+    }
+
     .card-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
-      max-width: 100vw;
+      justify-content: space-around;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 60px; /* Ajuste para evitar que los cards se superpongan en el toolbar */
     }
 
     .card {
+      box-sizing: border-box;
       border: 1px solid #ddd;
       padding: 10px;
       margin: 10px;
-      width: 300px;
-      background-color: #f9f9f9;
+      width: calc(33.33% - 20px); /* Ajuste para que haya espacio entre las tarjetas */
+      max-width: 200px; /* Ajusta el tamaño máximo según tus preferencias */
+      height: 200px; /* Ajusta la altura de los cards */
+      background-color: #333; /* Fondo de los cards */
       border-radius: 5px;
     }
 
     .card h3 {
       font-size: 18px;
       margin-bottom: 10px;
+      color: #fff; /* Color del texto del título */
     }
 
     .card ul {
@@ -33,28 +47,40 @@
 
     .card li {
       margin-bottom: 5px;
+      color: #888; /* Color del texto de la lista */
     }
 
     #addIngredient {
       margin-top: 10px;
-      padding: 5px;
+      padding: 10px;
+      width: calc(100% - 20px);
+      background-color: #333; /* Fondo del formulario */
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        width: calc(100% - 20px);
+      }
+    }
+
+    /* Estilos para dispositivos con pantalla pequeña */
+    @media (max-width: 600px) {
+      .card-container {
+        margin-top: 0; /* Elimina el margen superior para evitar superposición en el toolbar */
+      }
     }
   </style>
 </head>
 <body>
 <!-- Contenedor de tarjetas -->
 <div class="card-container">
-  <div class="card">
-    <h3>Piña Colada</h3>
-    <ul>
-      <li>Ron blanco: 60 ml</li>
-      <li>Jugo de piña: 90 ml</li>
-      <li>Crema de coco: 30 ml</li>
-      <li>Hielo</li>
-      <li>Rodaja de piña (para decorar)</li>
-    </ul>
-  </div>
-
   <div class="card">
     <h3>Daiquiri</h3>
     <ul>
@@ -87,42 +113,5 @@
     </ul>
   </div>
 </div>
-
-<!-- Formulario para agregar ingredientes -->
-<div id="addIngredient" class="card">
-  <h3>Agregar Ingredientes</h3>
-  <form id="ingredientForm">
-    <label for="ingredientName">Nombre del Ingrediente:</label>
-    <input type="text" id="ingredientName" name="ingredientName" required>
-    <label for="ingredientAmount">Cantidad:</label>
-    <input type="text" id="ingredientAmount" name="ingredientAmount" required>
-    <button type="button" onclick="addIngredient()">Agregar Ingrediente</button>
-  </form>
-</div>
-
-<script>
-  function addIngredient() {
-    var name = document.getElementById("ingredientName").value;
-    var amount = document.getElementById("ingredientAmount").value;
-
-    // Crear un nuevo elemento de lista con el ingrediente y su cantidad
-    var ingredientList = document.createElement("li");
-    ingredientList.textContent = name + ": " + amount;
-
-    // Crear una nueva tarjeta para el nuevo ingrediente
-    var newCard = document.createElement("div");
-    newCard.className = "card";
-    newCard.innerHTML = "<h3>" + name + "</h3><ul></ul>";
-    newCard.querySelector("ul").appendChild(ingredientList);
-
-    // Agregar la nueva tarjeta al contenedor
-    var container = document.querySelector(".card-container");
-    container.appendChild(newCard);
-
-    // Limpiar los campos del formulario
-    document.getElementById("ingredientForm").reset();
-  }
-</script>
-
 </body>
 </html>

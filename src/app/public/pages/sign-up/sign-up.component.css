@@ -1,5 +1,6 @@
+/* Estilos generales */
 .login-container {
-  height: calc(100vh - 40px); /* Ajusta la altura del contenedor principal */
+  height: calc(100vh - 40px);
   display: grid;
   place-items: center;
   justify-content: center;
@@ -10,8 +11,9 @@
 .login-container .wrapper {
   position: relative;
   display: flex;
-  width: 400px;
-  height: 600px; /* Ajusta la altura de la sección del formulario */
+  flex-direction: column; /* Cambiado a columna para diseño más estrecho */
+  width: 80%; /* Ajustado al 80% del ancho de la pantalla */
+  max-width: 400px; /* Añadido máximo de 400px para controlar el tamaño en pantallas más grandes */
   background: rgb(49, 48, 48);
   border: 2px solid #fff;
   border-radius: 2rem;
@@ -24,9 +26,6 @@
   overflow: hidden;
 }
 
-.login-container .wrapper.active {
-  height: 820px; /* Ajusta la altura de la sección del formulario cuando está activa */
-}
 .wrapper .form-box {
   width: 100%;
   padding: 1rem;
@@ -41,7 +40,7 @@
 /* Mover el formulario de registro a la derecha */
 .wrapper.active .form-box.register {
   transition: none;
-  transform: translateX(400px);
+  transform: translateX(100%); /* Cambiado a 100% para ocultar completamente en móviles */
 }
 
 .form-box h2 {
@@ -70,7 +69,6 @@
   transition: .5s;
 }
 
-/* Hace que el título de email & password suban ligeramente al hacer clic sobre ellos */
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
   top: -5px;
@@ -132,4 +130,11 @@
 
 .login-register-cliente p a:hover {
   text-decoration: underline;
+}
+
+/* Media query para pantallas más pequeñas (móviles, hasta 480px) */
+@media (max-width: 480px) {
+  .login-container .wrapper {
+    width: 90%; /* Ajustado al 90% del ancho de la pantalla */
+  }
 }

@@ -1,47 +1,3 @@
-/* Estilo para el contenedor de los cards */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; /* Alinea los cards hacia la derecha */
-  max-width: 100vw; /* Limita el ancho del contenedor al ancho de la pantalla */
-}
-
-/* Estilos para los cards */
-.card {
-  border: 2px solid #fff;
-  border-radius: 2rem;
-  margin: 10px;
-  width: 300px;
-  background: rgb(49, 48, 48);
-  box-shadow: 0 0 30px rgb(164, 224, 245);
-  color: #000;
-  transition: background .5s ease;
-}
-
-/* Estilos para los títulos de los cócteles */
-.card h3 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-/* Estilos para la lista de ingredientes */
-.card ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Estilos para los elementos de la lista */
-.card li {
-  margin-bottom: 5px;
-}
-
-/* Limpia el flotado para que los cards bajen cuando se alcance el límite de la pantalla */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 body {
   display: flex;
   justify-content: center;
@@ -53,19 +9,19 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; /* Alinea los cards hacia la derecha */
-  max-width: 100vw; /* Limita el ancho del contenedor al ancho de la pantalla */
+  justify-content: space-around;
+  max-width: 90vw; /* Reduje el ancho máximo para que los contenedores sean más pequeños */
 }
 
 .card {
+  box-sizing: border-box;
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
-  width: 300px;
-  height: 400px; /* Establece la altura deseada */
+  width: calc(33.33% - 20px);
+  height: 400px;
   background-color: #f9f9f9;
   border-radius: 5px;
-  box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
 }
 
 .card h3 {
@@ -80,4 +36,31 @@ body {
 
 .card li {
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px);
+    margin: 5px; /* Reduje el margen para que haya menos espacio alrededor de las tarjetas */
+  }
+
+  #addIngredient {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 5px; /* Reduje el margen para que haya menos espacio alrededor del formulario */
+  }
+
+  #ingredientForm label,
+  #ingredientForm input,
+  #ingredientForm button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
 }
