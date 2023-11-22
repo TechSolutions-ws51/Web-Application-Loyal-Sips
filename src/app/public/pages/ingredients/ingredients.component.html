@@ -8,8 +8,8 @@
     .card-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end; /* Alinea los cards hacia la derecha */
-      max-width: 100vw; /* Limita el ancho del contenedor al ancho de la pantalla */
+      justify-content: flex-end;
+      max-width: 100vw;
     }
 
     .card {
@@ -34,51 +34,95 @@
     .card li {
       margin-bottom: 5px;
     }
+
+    #addIngredient {
+      margin-top: 10px;
+      padding: 5px;
+    }
   </style>
 </head>
 <body>
-<div class="card">
-  <h3>Piña Colada</h3>
-  <ul>
-    <li>Ron blanco: 60 ml</li>
-    <li>Jugo de piña: 90 ml</li>
-    <li>Crema de coco: 30 ml</li>
-    <li>Hielo</li>
-    <li>Rodaja de piña (para decorar)</li>
-  </ul>
+<!-- Contenedor de tarjetas -->
+<div class="card-container">
+  <div class="card">
+    <h3>Piña Colada</h3>
+    <ul>
+      <li>Ron blanco: 60 ml</li>
+      <li>Jugo de piña: 90 ml</li>
+      <li>Crema de coco: 30 ml</li>
+      <li>Hielo</li>
+      <li>Rodaja de piña (para decorar)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Daiquiri</h3>
+    <ul>
+      <li>Ron blanco: 60 ml</li>
+      <li>Jugo de limón: 30 ml</li>
+      <li>Azúcar: 15 ml (ajusta según tu preferencia)</li>
+      <li>Hielo</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Cosmopolitan</h3>
+    <ul>
+      <li>Vodka: 45 ml</li>
+      <li>Licor de naranja: 15 ml</li>
+      <li>Jugo de arándano: 30 ml</li>
+      <li>Jugo de limón: 15 ml</li>
+      <li>Hielo</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Margarita</h3>
+    <ul>
+      <li>Tequila: 60 ml</li>
+      <li>Licor de naranja: 30 ml</li>
+      <li>Jugo de limón: 30 ml</li>
+      <li>Sal (para escarchar el borde del vaso)</li>
+      <li>Hielo</li>
+    </ul>
+  </div>
 </div>
 
-<div class="card">
-  <h3>Daiquiri</h3>
-  <ul>
-    <li>Ron blanco: 60 ml</li>
-    <li>Jugo de limón: 30 ml</li>
-    <li>Azúcar: 15 ml (ajusta según tu preferencia)</li>
-    <li>Hielo</li>
-  </ul>
+<!-- Formulario para agregar ingredientes -->
+<div id="addIngredient" class="card">
+  <h3>Agregar Ingredientes</h3>
+  <form id="ingredientForm">
+    <label for="ingredientName">Nombre del Ingrediente:</label>
+    <input type="text" id="ingredientName" name="ingredientName" required>
+    <label for="ingredientAmount">Cantidad:</label>
+    <input type="text" id="ingredientAmount" name="ingredientAmount" required>
+    <button type="button" onclick="addIngredient()">Agregar Ingrediente</button>
+  </form>
 </div>
 
-<div class="card">
-  <h3>Cosmopolitan</h3>
-  <ul>
-    <li>Vodka: 45 ml</li>
-    <li>Licor de naranja: 15 ml</li>
-    <li>Jugo de arándano: 30 ml</li>
-    <li>Jugo de limón: 15 ml</li>
-    <li>Hielo</li>
-  </ul>
-</div>
+<script>
+  function addIngredient() {
+    var name = document.getElementById("ingredientName").value;
+    var amount = document.getElementById("ingredientAmount").value;
 
-<div class="card">
-  <h3>Margarita</h3>
-  <ul>
-    <li>Tequila: 60 ml</li>
-    <li>Licor de naranja: 30 ml</li>
-    <li>Jugo de limón: 30 ml</li>
-    <li>Sal (para escarchar el borde del vaso)</li>
-    <li>Hielo</li>
-  </ul>
-</div>
+    // Crear un nuevo elemento de lista con el ingrediente y su cantidad
+    var ingredientList = document.createElement("li");
+    ingredientList.textContent = name + ": " + amount;
+
+    // Crear una nueva tarjeta para el nuevo ingrediente
+    var newCard = document.createElement("div");
+    newCard.className = "card";
+    newCard.innerHTML = "<h3>" + name + "</h3><ul></ul>";
+    newCard.querySelector("ul").appendChild(ingredientList);
+
+    // Agregar la nueva tarjeta al contenedor
+    var container = document.querySelector(".card-container");
+    container.appendChild(newCard);
+
+    // Limpiar los campos del formulario
+    document.getElementById("ingredientForm").reset();
+  }
+</script>
 
 </body>
 </html>

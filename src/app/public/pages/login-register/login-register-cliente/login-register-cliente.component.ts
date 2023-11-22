@@ -26,7 +26,7 @@ export class LoginRegisterClienteComponent {
     // Aquí puedes realizar la lógica de autenticación si es necesario
 
     // Redirige al usuario a la página de inicio
-    this.router.navigate(['/']); // Puede ser la ruta de la página de inicio en tu configuración
+    this.router.navigate(['/profile']); // Puede ser la ruta de la página de inicio en tu configuración
   }
 
 }
