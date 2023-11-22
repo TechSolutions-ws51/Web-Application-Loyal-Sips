@@ -1,0 +1,34 @@
+/* Estilos para los cards */
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  float: left; /* Coloca los cards en fila hacia la derecha */
+}
+
+/* Estilos para los títulos de los cócteles */
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la lista de ingredientes */
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos para los elementos de la lista */
+.card li {
+  margin-bottom: 5px;
+}
+
+/* Limpia el flotado para que los cards bajen cuando se alcance el límite de la pantalla */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

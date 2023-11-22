@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from "./public/pages/home/home.component";
 import {AboutComponent} from "./public/pages/about/about.component";
 import {ContactComponent} from "./public/pages/contact/contact.component";
@@ -19,27 +19,32 @@ import {
 import {
   LoginRegisterEmpresaComponent
 } from "./public/pages/login-register/login-register-empresa/login-register-empresa.component";
+import {IngredientsComponent} from "./public/pages/ingredients/ingredients.component";
+
 const routes: Routes = [
-  { path:'home', component: HomeComponent},
-  // { path:'about', component: AboutComponent},
-  { path:'contact', component: ContactComponent},
+  {path: 'home', component: HomeComponent},
+  // { path:'about', component: IngredientsComponent},
+  {path: 'contact', component: ContactComponent},
   // { path:'services', component: ServicesComponent},
-  { path:'support', component: SupportComponent},
+  {path: 'support', component: SupportComponent},
   //{ path:'login', component: LoginComponent},
   //{ path:'sign-up', component: SignUpComponent},
-  { path:'drinks', component: DrinksComponent},
-  { path: 'profile', component: ProfileComponent},
-  { path: 'bares', component: BaresComponent},
+  {path: 'drinks', component: DrinksComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: 'bares', component: BaresComponent},
   {path: 'bar-profile/:id', component: Bar1Component},
-  { path: 'login-register', component: SectorElectionComponent},
-  { path: 'login-register/cliente', component: LoginRegisterClienteComponent},
-  { path: 'login-register/empresa', component: LoginRegisterEmpresaComponent},
-  { path:'', redirectTo: 'home', pathMatch: 'full'},
-  { path :'**', component: PageNotFoundComponent },
+
+  {path: 'ingredients', component: IngredientsComponent},
+  {path: 'login-register', component: SectorElectionComponent},
+  {path: 'login-register/cliente', component: LoginRegisterClienteComponent},
+  {path: 'login-register/empresa', component: LoginRegisterEmpresaComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

@@ -38,13 +38,14 @@ import { SectorElectionComponent } from './public/pages/login-register/sector-el
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {MatSelectModule} from "@angular/material/select";
 import {MatOptionModule} from "@angular/material/core";
+import {IngredientsComponent} from "./public/pages/ingredients/ingredients.component";
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
   declarations: [
-
+    IngredientsComponent,
     AppComponent,
     HomeComponent,
     AboutComponent,

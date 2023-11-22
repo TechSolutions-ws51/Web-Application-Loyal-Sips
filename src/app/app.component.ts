@@ -17,6 +17,7 @@ export class AppComponent {
     //{ path: '/services', title: 'Services' },
     { path: '/bares', title: 'Bares' },
     { path: '/drinks', title: 'Drinks' },
+    { path: '/ingredients', title: 'Ingredients' },
     //{ path: '/contact', title: 'Contact' },
     //{ path: '/login', title: 'Login' },
     //{ path: '/sign-up', title: 'Sing Up' },
