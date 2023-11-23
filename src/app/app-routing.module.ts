@@ -14,37 +14,38 @@ import {BaresComponent} from "./public/pages/bares/bares.component";
 import {Bar1Component} from "./public/pages/bar1/bar1.component";
 import {SectorElectionComponent} from "./public/pages/login-register/sector-election/sector-election.component";
 import {
-  LoginRegisterClienteComponent
+    LoginRegisterClienteComponent
 } from "./public/pages/login-register/login-register-cliente/login-register-cliente.component";
 import {
-  LoginRegisterEmpresaComponent
+    LoginRegisterEmpresaComponent
 } from "./public/pages/login-register/login-register-empresa/login-register-empresa.component";
-import {IngredientsComponent} from "./public/pages/ingredients/ingredients.component";
+import {IngredientsComponent} from "./tp1/pages/ingredients/ingredients.component";
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  // { path:'about', component: IngredientsComponent},
-  {path: 'contact', component: ContactComponent},
-  // { path:'services', component: ServicesComponent},
-  {path: 'support', component: SupportComponent},
-  //{ path:'login', component: LoginComponent},
-  {path: 'drinks', component: DrinksComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'bares', component: BaresComponent},
-  {path: 'bar-profile/:id', component: Bar1Component},
+    {path: 'home', component: HomeComponent},
+    // { path:'about', component: IngredientsComponent},
+    {path: 'contact', component: ContactComponent},
+    // { path:'services', component: ServicesComponent},
+    {path: 'support', component: SupportComponent},
+    //{ path:'login', component: LoginComponent},
+    {path: 'drinks', component: DrinksComponent},
+    {path: 'profile', component: ProfileComponent},
+    {path: 'bares', component: BaresComponent},
+    {path: 'bar-profile/:id', component: Bar1Component},
+    {path: 'ingredients', component: IngredientsComponent},
 
-  {path: 'ingredients', component: IngredientsComponent},
-  { path:'sign-up', component: SignUpComponent},
-  {path: 'login-register', component: SectorElectionComponent},
-  {path: 'login-register/cliente', component: LoginRegisterClienteComponent},
-  {path: 'login-register/empresa', component: LoginRegisterEmpresaComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: '**', component: PageNotFoundComponent},
+    //{path: 'ingredients', component: IngredientsComponent},
+    {path: 'sign-up', component: SignUpComponent},
+    {path: 'login-register', component: SectorElectionComponent},
+    {path: 'login-register/cliente', component: LoginRegisterClienteComponent},
+    {path: 'login-register/empresa', component: LoginRegisterEmpresaComponent},
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule {
 }

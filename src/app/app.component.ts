@@ -17,9 +17,10 @@ export class AppComponent {
     //{ path: '/services', title: 'Services' },
     { path: '/bares', title: 'Bares' },
     { path: '/drinks', title: 'Drinks' },
-    { path: '/ingredients', title: 'Ingredients' },
+    //{ path: '/ingredients', title: 'Ingredients' },
     //{ path: '/contact', title: 'Contact' },
     //{ path: '/login', title: 'Login' },
+    { path: '/ingredients', title: 'Ingredients'},
     { path: '/profile', title: 'Profile' },
     { path: '/support', title: 'Support' },
     { path: '/sign-up', title: 'Sing Up' },
@@ -42,4 +43,5 @@ export class AppComponent {
     translate.use(browserLang && browserLang.match(/en|es/) ? browserLang : 'es');
 
   }
+
 }

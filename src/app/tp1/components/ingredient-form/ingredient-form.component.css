@@ -1,0 +1,130 @@
+/* General styling */
+.login-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(49, 48, 48);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 0 10px rgb(164, 224, 245);
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 10px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #b8e9ff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+/* Hace que el título de email & password suban ligeramente al hacer clic sobre ellos */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 1rem 0;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #eadfdf;
+  line-height: 40px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: rgba(1, 171, 225, 0.73);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.89);
+  color: #01abe1;
+  transition: .5s;
+}
+
+.login-register-cliente {
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 0.4rem;
+  font-weight: 500;
+}
+
+.login-register-cliente p a {
+  color: #01abe1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register-cliente p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapper .form-box {
+    max-width: 300px;
+  }
+}

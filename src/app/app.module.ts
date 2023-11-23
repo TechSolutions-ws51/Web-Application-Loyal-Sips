@@ -38,13 +38,17 @@ import { SectorElectionComponent } from './public/pages/login-register/sector-el
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {MatSelectModule} from "@angular/material/select";
 import {MatOptionModule} from "@angular/material/core";
-import {IngredientsComponent} from "./public/pages/ingredients/ingredients.component";
+import {IngredientFormComponent} from "./tp1/components/ingredient-form/ingredient-form.component";
+import {IngredientsService} from "./tp1/services/ingredients.service";
+import {IngredientsComponent} from "./tp1/pages/ingredients/ingredients.component";
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
   declarations: [
+    IngredientsComponent,
+    IngredientFormComponent,
     IngredientsComponent,
     AppComponent,
     HomeComponent,
@@ -92,7 +96,7 @@ export function createTranslateLoader(http: HttpClient) {
     MatGridListModule,
     MatDividerModule,
   ],
-  providers: [DrinksService],
+  providers: [DrinksService,IngredientsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

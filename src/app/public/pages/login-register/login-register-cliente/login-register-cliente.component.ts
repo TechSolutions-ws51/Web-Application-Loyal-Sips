@@ -27,6 +27,15 @@ export class LoginRegisterClienteComponent {
 
     // Redirige al usuario a la página de inicio
     this.router.navigate(['/profile']); // Puede ser la ruta de la página de inicio en tu configuración
+
+    // Elimina el formulario de inicio de sesión si existe
+    const loginForm = document.querySelector('.login');
+    if (loginForm && loginForm.parentNode) {
+      loginForm.parentNode.removeChild(loginForm);
+    }
+
+    // Establece la propiedad `isInactive` en `true`
+    this.isInactive = true;
   }
 
 }
