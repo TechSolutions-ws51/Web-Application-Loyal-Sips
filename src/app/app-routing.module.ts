@@ -32,7 +32,7 @@ const routes: Routes = [
     {path: 'profile', component: ProfileComponent},
     {path: 'bares', component: BaresComponent},
     {path: 'bar-profile/:id', component: Bar1Component},
-    {path: 'ingredients', component: IngredientsComponent},
+    {path: 'inventory', component: IngredientsComponent},
 
     //{path: 'ingredients', component: IngredientsComponent},
     {path: 'sign-up', component: SignUpComponent},

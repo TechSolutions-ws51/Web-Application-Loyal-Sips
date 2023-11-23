@@ -20,7 +20,7 @@ export class AppComponent {
     //{ path: '/ingredients', title: 'Ingredients' },
     //{ path: '/contact', title: 'Contact' },
     //{ path: '/login', title: 'Login' },
-    { path: '/ingredients', title: 'Ingredients'},
+    { path: '/inventory', title: 'Inventory'},
     { path: '/profile', title: 'Profile' },
     { path: '/support', title: 'Support' },
     { path: '/sign-up', title: 'Sing Up' },
