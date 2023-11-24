@@ -23,7 +23,7 @@ export class AppComponent {
     { path: '/inventory', title: 'Inventory'},
     { path: '/profile', title: 'Profile' },
     { path: '/support', title: 'Support' },
-    { path: '/sign-up', title: 'Sing Up' },
+    { path: '/sign-up', title: 'Sign Up' },
     { path: '/login-register', title: 'Login' },
   ];
 
