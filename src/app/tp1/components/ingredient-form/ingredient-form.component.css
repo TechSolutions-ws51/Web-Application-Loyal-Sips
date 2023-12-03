@@ -1,63 +1,45 @@
-/* Estilos para el formulario de registro */
+/* General styling */
 .login-container {
-  height: calc(100vh - 80px);
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  margin-top: 5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Sección del formulario de registro */
-.login-container .wrapper {
-  position: relative;
+.wrapper {
   display: flex;
-  width: 400px;
-  height: 440px;
-  background: rgb(49, 48, 48);
-  border: 2px solid #fff;
-  border-radius: 2rem;
-  backdrop-filter: blur(0.5rem);
-  box-shadow: 0 0 30px rgb(164, 224, 245);
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  transition: height .2s ease;
-  overflow: hidden;
-}
-
-.login-container .wrapper.active {
-  height: 720px;
+  width: 100%;
+  padding: 20px;
 }
 
 .wrapper .form-box {
   width: 100%;
-  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(49, 48, 48);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 0 10px rgb(164, 224, 245);
+  justify-content: center;
+  align-items: center;
 }
 
-/* Mover el formulario de registro a la izquierda */
-.wrapper .form-box.register {
-  transition: transform .20s ease;
-  transform: translateX(0);
-}
-
-/* Mover el formulario de registro a la derecha */
-.wrapper.active .form-box.register {
-  transition: none;
-  transform: translateX(400px);
-}
-
-.form-box h2 {
+h2 {
   font-size: 2em;
   color: #fff;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .input-box {
   position: relative;
   width: 100%;
-  height: 3rem;
+  height: 40px;
   border-bottom: 2px solid #adadad;
-  margin: 30px 0;
+  margin-bottom: 10px;
 }
 
 .input-box label {
@@ -95,21 +77,21 @@
   right: 8px;
   font-size: 1.2em;
   color: #eadfdf;
-  line-height: 57px;
+  line-height: 40px;
 }
 
 .btn {
   width: 100%;
-  height: 3.4rem;
+  height: 40px;
   background: rgba(1, 171, 225, 0.73);
   border: none;
   outline: none;
-  border-radius: 1.3rem;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1.1rem;
   color: white;
   font-weight: 500;
-  margin-top: .9rem;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -122,7 +104,7 @@
   font-size: .9em;
   color: #fff;
   text-align: center;
-  margin: 1.5rem 0 0.4rem;
+  margin: 10px 0 0.4rem;
   font-weight: 500;
 }
 
@@ -134,4 +116,15 @@
 
 .login-register-cliente p a:hover {
   text-decoration: underline;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapper .form-box {
+    max-width: 300px;
+  }
 }

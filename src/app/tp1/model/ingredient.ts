@@ -1,11 +1,10 @@
-export class Drink {
+export class Ingredient {
   id: number;
   name: string;
-  address: string;
+  cost: number;
   constructor() {
     this.id = 0;
     this.name = '';
-    this.address = '';
-
+    this.cost = 0;
   }
 }

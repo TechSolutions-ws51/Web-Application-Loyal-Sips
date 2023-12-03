@@ -3,7 +3,7 @@ import {catchError, Observable, retry, throwError} from "rxjs";
 import {environment} from "../../../environments/environment";
 
 export class BaseService<T> {
-  basePath : string = `${environment.serverBasePath};`
+  basePath : string = `${environment.serverBasePath}`
   resourceEndpoint: string = '/resources';
 
   httpOptions = {
@@ -27,6 +27,8 @@ export class BaseService<T> {
   }
 
   private resourcePath(): string {
+    console.log("basePath", this.basePath);
+    console.log("resourceEndpoint", this.resourceEndpoint);
     return `${this.basePath}${this.resourceEndpoint}`;
   }
 
@@ -51,8 +53,9 @@ export class BaseService<T> {
 
   // Get All Resources
   getAll(): Observable<T> {
+    console.log(this.resourcePath());
     return this.http
-      .get<T>(environment.serverBasePath)
+      .get<T>(this.resourcePath(), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 }

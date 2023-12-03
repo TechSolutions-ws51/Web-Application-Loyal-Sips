@@ -1,29 +1,112 @@
-<div class="profile-section">
-  <!-- Fondo de imagen -->
-  <img class="imagen-full"
-       src="https://media.discordapp.net/attachments/1145898392631918604/1160097541598220308/fondo-perfil.png?ex=65336c07&is=6520f707&hm=2d16ff24972fd76b7926cec7528ddf006641f9aa987aa0b57563b207e9520e92&=&width=1409&height=302"
-       alt="Fondo de perfil">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("https://media.discordapp.net/attachments/1145898392631918604/1160097541598220308/fondo-perfil.png?ex=65336c07&is=6520f707&hm=2d16ff24972fd76b7926cec7528ddf006641f9aa987aa0b57563b207e9520e92&=&width=1409&height=302");
+      background-size: cover;
+    }
 
-  <!-- Contenedor de perfil con título y foto de usuario -->
-  <div class="profile-container">
-    <h2 class="title-profile">Jocais Ampudia</h2>
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      line-height: 1.5;
+    }
 
-    <div class="profile-image-container">
-      <img class="profile-image" #userPhoto
-           src="https://media.discordapp.net/attachments/1145898392631918606/1163166280489115698/jocais.jpg?ex=653e9603&is=652c2103&hm=f7d07b1964793b81b012d068ee26a7060efb012941d4e95fe2f167b13c50f364&="
-           alt="Foto de usuario">
-      <!-- Botón para editar foto de perfil
-      <button (click)="editarFoto()">
-        <i class="fa fa -pencil"> aria-hidden="true"</i>
-      </button>
-      -->
-    </div>
+    .title-profile {
+      font-size: 4em;
+      margin-top: 1.3em;
+      margin-bottom: 1em;
+    }
+
+    .profile-image {
+      width: 100%;
+      max-width: 10rem;
+      height: auto;
+      border-radius: 50%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      cursor: grab;
+      clip-path: circle(50%);
+    }
+
+    .account-details {
+      background-color: #1e1d1d;
+      padding: 2rem;
+      max-width: 60em;
+      font-family: Inter, sans-serif;
+      font-size: 1.5em;
+      line-height: 2.5rem;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .title-profile {
+        font-size: 2.5em;
+      }
+
+      .profile-image {
+        max-width: 8em;
+      }
+
+      .account-details {
+        padding: 1rem;
+        font-size: 1.2em;
+        line-height: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title-profile {
+        font-size: 2em;
+      }
+
+      .profile-image {
+        max-width: 6em;
+      }
+
+      .account-details {
+        padding: 0.5rem;
+        font-size: 1em;
+        line-height: 1.5rem;
+      }
+    }
+  </style>
+  <title>Profile Page</title>
+</head>
+<body>
+
+<div class="profile-container">
+  <h2 class="title-profile">Jean Pierre</h2>
+  <div class="profile-image-container">
+    <img class="profile-image" src="https://media.discordapp.net/attachments/1145898392631918606/1163166280489115698/jocais.jpg?ex=653e9603&is=652c2103&hm=f7d07b1964793b81b012d068ee26a7060efb012941d4e95fe2f167b13c50f364&=" alt="Foto de usuario">
   </div>
 </div>
 
 <div class="account-details">
-  <p>Fecha de Nacimiento: 24/02/2004</p>
-  <p>Genero: Masculino</p>
-  <p>Numero de celular: 974 408 952</p>
-  <p>Correo: ampudiaflores@gmail.com</p>
+  <p>Birthdate: 10/04/2004</p>
+  <p>Gender: Masculino</p>
+  <p>Cell phone number: 950 688 942</p>
+  <p>Email: jean126pi@gmail.com</p>
 </div>
+
+</body>
+</html>

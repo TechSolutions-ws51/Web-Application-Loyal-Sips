@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from "@angular/material/sidenav";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { MatSidenav } from "@angular/material/sidenav";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   /*Aqui  se muestra lo que se ve en el Navbar*/
   title = 'TP1';
   options = [
@@ -15,11 +17,13 @@ export class AppComponent {
     //{ path: '/services', title: 'Services' },
     { path: '/bares', title: 'Bares' },
     { path: '/drinks', title: 'Drinks' },
+    //{ path: '/ingredients', title: 'Ingredients' },
     //{ path: '/contact', title: 'Contact' },
     //{ path: '/login', title: 'Login' },
-    //{ path: '/sign-up', title: 'Sing Up' },
+    { path: '/inventory', title: 'Inventory'},
     { path: '/profile', title: 'Profile' },
     { path: '/support', title: 'Support' },
+    { path: '/sign-up', title: 'Sign Up' },
     { path: '/login-register', title: 'Login' },
   ];
 
@@ -31,6 +35,13 @@ export class AppComponent {
 
   toggleSidenav() {
     this.showNavigationButtons = !this.showNavigationButtons;
+  }
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['es', 'en']);
+    translate.setDefaultLang('en');
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang && browserLang.match(/en|es/) ? browserLang : 'es');
+
   }
 
 }

@@ -1,72 +1,140 @@
-/* Estilo general para el cuerpo de la página */
-body {
-  background-image: url('/assets/image/fondo2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: SansSerif, sans-serif;
-  background-color: rgba(0, 0, 0, 0.68);
-  padding: 4cm;
+/* Estilos generales */
+.login-container {
+  height: calc(100vh - 40px);
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
-/* Estilo del contenedor del formulario */
-h2 {
-  text-align: center;
-  margin: 20px 0;
+/* Sección del formulario de registro */
+.login-container .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para diseño más estrecho */
+  width: 80%; /* Ajustado al 80% del ancho de la pantalla */
+  max-width: 400px; /* Añadido máximo de 400px para controlar el tamaño en pantallas más grandes */
+  background: rgb(49, 48, 48);
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 0 30px rgb(164, 224, 245);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: height .2s ease;
+  overflow: hidden;
 }
 
-form {
-  background-color: #7d7c7c;
-  border-radius: 9px;
-  margin: 100px auto;
-  max-width: 400px;
-  padding: 40px;
-  text-align: center;
-}
-
-
-/* Estilo de los elementos del formulario */
-div {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"],
-input[type="radio"] {
+.wrapper .form-box {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: 1rem;
 }
 
-input[type="radio"] {
-  display: inline-block;
-  margin-right: 5px;
+/* Mover el formulario de registro a la izquierda */
+.wrapper .form-box.register {
+  transition: transform .20s ease;
+  transform: translateX(0);
 }
 
-button[type="submit"] {
-  background-color: #ff4700;
+/* Mover el formulario de registro a la derecha */
+.wrapper.active .form-box.register {
+  transition: none;
+  transform: translateX(100%); /* Cambiado a 100% para ocultar completamente en móviles */
+}
+
+.form-box h2 {
+  font-size: 2em;
   color: #fff;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #b8e9ff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
   border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 1rem 0;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #eadfdf;
+  line-height: 57px;
+}
+
+.btn {
+  width: 100%;
+  height: 3.4rem;
+  background: rgba(1, 171, 225, 0.73);
+  border: none;
+  outline: none;
+  border-radius: 1.3rem;
   cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  margin-top: .9rem;
 }
 
-button[type="submit"]:hover {
-  background-color: #ff8000;
+.btn:hover {
+  background: rgba(255, 255, 255, 0.89);
+  color: #01abe1;
+  transition: .5s;
 }
 
-.conImage {
-  text-align: center; /* Alinea el texto a la derecha */
+.login-register-cliente {
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 1.5rem 0 0.4rem;
+  font-weight: 500;
+}
 
-  margin-top: -27cm;
+.login-register-cliente p a {
+  color: #01abe1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register-cliente p a:hover {
+  text-decoration: underline;
+}
+
+/* Media query para pantallas más pequeñas (móviles, hasta 480px) */
+@media (max-width: 480px) {
+  .login-container .wrapper {
+    width: 90%; /* Ajustado al 90% del ancho de la pantalla */
+  }
 }

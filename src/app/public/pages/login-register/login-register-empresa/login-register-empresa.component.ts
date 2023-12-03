@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login-register-empresa',
@@ -16,5 +17,15 @@ export class LoginRegisterEmpresaComponent {
   toggleInactive(){
     this.isInactive= !this.isInactive;
   }
+  constructor(private router: Router) { }
+
+  // Este método se llama cuando el usuario hace clic en el botón de login
+  onLoginButtonClick() {
+    // Aquí puedes realizar la lógica de autenticación si es necesario
+
+    // Redirige al usuario a la página de inicio
+    this.router.navigate(['/']); // Puede ser la ruta de la página de inicio en tu configuración
+  }
+
 
 }

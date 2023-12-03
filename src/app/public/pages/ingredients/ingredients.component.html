@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingredientes de Cócteles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 60px; /* Ajuste para evitar que los cards se superpongan en el toolbar */
+    }
+
+    .card {
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px;
+      width: calc(33.33% - 20px); /* Ajuste para que haya espacio entre las tarjetas */
+      max-width: 200px; /* Ajusta el tamaño máximo según tus preferencias */
+      height: 200px; /* Ajusta la altura de los cards */
+      background-color: #333; /* Fondo de los cards */
+      border-radius: 5px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff; /* Color del texto del título */
+    }
+
+    .card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .card li {
+      margin-bottom: 5px;
+      color: #888; /* Color del texto de la lista */
+    }
+
+    #addIngredient {
+      margin-top: 10px;
+      padding: 10px;
+      width: calc(100% - 20px);
+      background-color: #333; /* Fondo del formulario */
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        width: calc(100% - 20px);
+      }
+    }
+
+    /* Estilos para dispositivos con pantalla pequeña */
+    @media (max-width: 600px) {
+      .card-container {
+        margin-top: 0; /* Elimina el margen superior para evitar superposición en el toolbar */
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Contenedor de tarjetas -->
+<div class="card-container">
+  <div class="card">
+    <h3>Daiquiri</h3>
+    <ul>
+      <li>Ron blanco: 60 ml</li>
+      <li>Jugo de limón: 30 ml</li>
+      <li>Azúcar: 15 ml (ajusta según tu preferencia)</li>
+      <li>Hielo</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Cosmopolitan</h3>
+    <ul>
+      <li>Vodka: 45 ml</li>
+      <li>Licor de naranja: 15 ml</li>
+      <li>Jugo de arándano: 30 ml</li>
+      <li>Jugo de limón: 15 ml</li>
+      <li>Hielo</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Margarita</h3>
+    <ul>
+      <li>Tequila: 60 ml</li>
+      <li>Licor de naranja: 30 ml</li>
+      <li>Jugo de limón: 30 ml</li>
+      <li>Sal (para escarchar el borde del vaso)</li>
+      <li>Hielo</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
